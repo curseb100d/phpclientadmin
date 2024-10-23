@@ -51,7 +51,8 @@ if(isset($message)){
             }
             else {
             ?>
-                <p class="name"></p>
+                <p class="name">Please login first</p>
+                <a href="login.php" class="btn">Login</a>
             <?php
             }
             ?>

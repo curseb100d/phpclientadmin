@@ -27,8 +27,12 @@ if(isset($_SESSION['user_id'])){
 <body>
 
     <!-- Header Section Starts -->
-    <?php include 'components/user_header.php' ?>
+    <?php include 'components/user_header.php'; ?>
     <!-- Header Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <?php include 'components/footer.php'; ?>
+    <!-- Footer Section Starts -->
     
     <!-- Custom JS File Link -->
     <script src="script.js"></script>
