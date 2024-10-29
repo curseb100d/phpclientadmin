@@ -9,6 +9,7 @@ if (isset($_SESSION['user_id'])) {
     $user_id = '';
 }
 
+include 'components/add_cart.php';
 ?>
 
 <!DOCTYPE html>
@@ -138,6 +139,10 @@ if (isset($_SESSION['user_id'])) {
 
         </div>
 
+        <div class="more-btn">
+            <a href="menu.php" class="btn">Load More</a>
+        </div>
+
     </section>
     <!-- Home Products Section Ends -->
 
@@ -148,7 +153,7 @@ if (isset($_SESSION['user_id'])) {
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- Custom JS File Link -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <script>
         var swiper = new Swiper(".home-slider", {

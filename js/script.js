@@ -17,6 +17,16 @@ window.onscroll = () => {
     profile.classList.remove('active');
 }
 
+function loader(){
+    document.querySelector('.loader').style.display = 'none';
+ }
+ 
+ function fadeOut(){
+    setInterval(loader, 2000);
+ }
+ 
+ window.onload = fadeOut;
+
 document.querySelectorAll('input[type="number"]').forEach(input => {
     input.oninput = () => {
         if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
